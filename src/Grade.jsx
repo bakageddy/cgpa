@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Typography, Select, FormControl, InputLabel, MenuItem, Box } from '@mui/material';
 
 export default function Grade({ labelid, id, label }) {
-	const [grade, setGrade] = React.useState('O');
+	const [grade, setGrade] = React.useState(10);
 
 	const handleChange = (event) => {
 		setGrade(event.target.value);
@@ -10,8 +10,8 @@ export default function Grade({ labelid, id, label }) {
 
 	return (
 		<Box display="flex" alignItems="center">
-			<FormControl sx={{ m: 1, width: 200 }} size="small">
-				<InputLabel id={labelid}>{label}</InputLabel>
+			<FormControl sx={{ m: 1, width: 200}} size="small">
+				<InputLabel sx={{color:"#d8dee9"}} id={labelid}>{label}</InputLabel>
 				<Select
 					labelId={labelid}
 					id={id}
@@ -19,6 +19,11 @@ export default function Grade({ labelid, id, label }) {
 					label={label}
 					onChange={handleChange}
 					sx={{
+						color: "#d8dee9",
+						borderStyle: "none",
+						borderWidth: 0,
+					}}
+					inputProps={{
 						color: "#d8dee9"
 					}}
 				>

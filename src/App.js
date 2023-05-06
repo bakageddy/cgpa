@@ -1,22 +1,40 @@
 import React from 'react';
-import { Grid } from '@mui/material';
+import { Button, Grid, Stack, Typography } from '@mui/material';
 import Semester from './Semester';
-import createPalette from '@mui/material/styles/createPalette';
+import { courses } from './index.js';
 
 
 function App() {
-	const courses = {
-		"Semester 1": ["JHS1121", "JMA1101", "JPH1101", "JCY1101", "JGE1101", "JGE1102", "JPC1111", "JGE1112", "JGE1111"],
-		"Semester 2": ["JEC1204", "JGE1201", "JGE1202", "JHS1221", "JMA1201", "JEC1214", "JBE1223"],
-		"Semester 3": ["JCS1301", "JCS1302", "JCS1303", "JCS1311", "JCS1312", "JCS1321", "JMA1303"],
+	const points = {
+		"O": 10,
+		"A+": 9,
+		"A": 8,
+		"B+": 7,
+		"B": 6,
+		"C": 5,
+		"U": 0,
+	}
+
+	const handleClick = () => {
+		let credits = 0
+		let totalCredits = 0
+		for (const [keys, course_arr] of Object.entries(courses)) {
+			course_arr.map((x) => {
+				let grade = points[document.getElementById(x["course"]).innerText];
+				let credit = grade * x["credit"];
+				totalCredits += credit;
+				credits += x["credit"];
+			})
+		}
+		document.getElementById("output").innerHTML = totalCredits / credits;
 	}
 	return (
-		<div className="App">
+		<>
 			<Grid display="flex" alignItems="center" justifyContent="center">
 				<Grid display="grid"
 					sx={{
-						gridTemplateColumns: "25% 25% 25%",
-						gap: "5rem",
+						gridTemplateColumns: "auto auto auto",
+						gap: "10rem",
 					}}
 				>
 					{Object.keys(courses).map((x) =>
@@ -24,7 +42,31 @@ function App() {
 					)}
 				</Grid>
 			</Grid>
-		</div>
+
+			<Stack sx={{
+				padding: "14px",
+				display: "grid",
+				justifyItems: "center",
+				alignContent: "center",
+			}}>
+				<Button
+					onClick={handleClick}
+					sx={{
+						color: "#2e3440",
+						backgroundColor: "#81a1c1",
+					}}
+				>
+					<Typography sx={{
+						fontFamily: "Barlow Condensed",
+					}}>Calculate</Typography>
+				</Button>
+				<Typography sx={{
+					fontFamily: "Barlow Condensed",
+					color: "#d8dee9",
+				}} 
+				id="output"></Typography>
+			</Stack>
+		</>
 	);
 }
 

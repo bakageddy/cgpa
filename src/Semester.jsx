@@ -1,4 +1,4 @@
-import { Card, CardContent, Box, Grid, Typography } from '@mui/material';
+import { Card, CardContent, Grid, Typography } from '@mui/material';
 import Grade from './Grade';
 import React from 'react';
 
@@ -22,7 +22,7 @@ export default function Semester({ semesterName, subjects }) {
 						}}
 					>
 						{subjects.map((x) =>
-							<Grade label={x} labelid={x + '-label'} id={x} />
+							<Grade label={x["course"]} labelid={x["course"] + '-label'} id={x["course"]} />
 						)}
 					</Grid>
 				</Grid>
