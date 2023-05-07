@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/gdnand.github.io/cgpa/static/js/main.9aa5f1b5.js",
-    "index.html": "/gdnand.github.io/cgpa/index.html",
-    "main.9aa5f1b5.js.map": "/gdnand.github.io/cgpa/static/js/main.9aa5f1b5.js.map"
+    "main.js": "/cgpa/static/js/main.9aa5f1b5.js",
+    "index.html": "/cgpa/index.html",
+    "main.9aa5f1b5.js.map": "/cgpa/static/js/main.9aa5f1b5.js.map"
   },
   "entrypoints": [
     "static/js/main.9aa5f1b5.js"
