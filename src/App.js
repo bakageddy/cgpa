@@ -33,7 +33,6 @@ function App() {
 			<Grid display="flex" alignItems="center" justifyContent="center">
 				<Grid display="grid"
 					sx={{
-						gridTemplateColumns: "auto auto auto",
 						gap: "10rem",
 					}}
 				>

@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Semester({ semesterName, subjects }) {
 	return (
-		<Card sx={{ minWidth: "2.5rem", backgroundColor: "#434c5e" }}>
+		<Card sx={{ backgroundColor: "#434c5e" }}>
 			<CardContent>
 				<Grid>
 					<Typography sx={{
