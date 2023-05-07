@@ -1,5 +1,6 @@
 {
   "name": "cgpa",
+  "homepage": "https://gdnand.github.io/cgpa",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
