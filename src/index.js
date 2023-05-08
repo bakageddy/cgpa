@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+export const points = {
+	"O": 10,
+	"A+": 9,
+	"A": 8,
+	"B+": 7,
+	"B": 6,
+	"C": 5,
+	"U": 0,
+}
 export const courses = {
 	"Semester 1": [
 		{ "course": "JHS1121", "credit": 3 },
@@ -37,7 +46,7 @@ export const courses = {
 }
 
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
 );

@@ -1,20 +1,10 @@
 import React from 'react';
 import { Button, Grid, Stack, Typography } from '@mui/material';
 import Semester from './Semester';
-import { courses } from './index.js';
+import { courses, points } from './index.js';
 
 
 function App() {
-	const points = {
-		"O": 10,
-		"A+": 9,
-		"A": 8,
-		"B+": 7,
-		"B": 6,
-		"C": 5,
-		"U": 0,
-	}
-
 	const handleClick = () => {
 		let credits = 0
 		let totalCredits = 0
@@ -62,8 +52,8 @@ function App() {
 				<Typography sx={{
 					fontFamily: "Barlow Condensed",
 					color: "#d8dee9",
-				}} 
-				id="output"></Typography>
+				}}
+					id="output"></Typography>
 			</Stack>
 		</>
 	);
