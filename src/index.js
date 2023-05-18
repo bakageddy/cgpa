@@ -38,9 +38,9 @@ export const courses = {
 		{ "course": "JCS1301", "credit": 3 },
 		{ "course": "JCS1302", "credit": 3 },
 		{ "course": "JCS1303", "credit": 3 },
-		{ "course": "JCS1311", "credit": 3 },
+		{ "course": "JCS1311", "credit": 2 },
 		{ "course": "JCS1312", "credit": 2 },
-		{ "course": "JCS1321", "credit": 2 },
+		{ "course": "JCS1321", "credit": 3 },
 		{ "course": "JMA1303", "credit": 3 }
 	],
 }
