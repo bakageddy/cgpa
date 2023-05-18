@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/cgpa/static/js/main.802c01e2.js",
+    "main.js": "/cgpa/static/js/main.c2d108ae.js",
     "index.html": "/cgpa/index.html",
-    "main.802c01e2.js.map": "/cgpa/static/js/main.802c01e2.js.map"
+    "main.c2d108ae.js.map": "/cgpa/static/js/main.c2d108ae.js.map"
   },
   "entrypoints": [
-    "static/js/main.802c01e2.js"
+    "static/js/main.c2d108ae.js"
   ]
 }
