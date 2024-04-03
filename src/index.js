@@ -54,6 +54,15 @@ export const courses = {
 		{"course": "JCS1411", "credit": 2},
 		{"course": "JCS1412", "credit": 2},
 	],
+	"Semester 5": [
+		{"course": "JCB1402", "credit": 3},
+		{"course": "JCS1501", "credit": 3},
+		{"course": "JCS1502", "credit": 3},
+		{"course": "JCS1503", "credit": 4},
+		{"course": "JCS1511", "credit": 2},
+		{"course": "JEC9002", "credit": 3},
+		{"course": "JHS1511", "credit": 1},
+	],
 }
 
 root.render(
